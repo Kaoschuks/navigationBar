@@ -1,0 +1,7 @@
+{
+  "name": "navigationBar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
