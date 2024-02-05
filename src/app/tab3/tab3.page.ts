@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Capacitor } from '@capacitor/core';
+import { NavigationBar, NavigationBarPluginEvents } from '@hugotomazi/capacitor-navigation-bar';
 
 @Component({
   selector: 'app-tab3',
@@ -7,7 +8,7 @@ import { Capacitor } from '@capacitor/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page implements OnInit {
-  private navigatorBar: any = Capacitor.Plugins['NavigationBar']
+  private navigatorBar: any = NavigationBar
   
   async ngOnInit() {
     const res: any = await this.navigatorBar.setColor({
